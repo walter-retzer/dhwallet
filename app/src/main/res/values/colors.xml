@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="concrete">#FFF2F2F2</color>
+    <color name="tundora">#FF424242</color>
+    <color name="light_blue_magenta">#FF7472DE</color>
+    <color name="electric_violet">#FF4A27F3</color>
+    <color name="ocean_blue_pearl">#FF444BB1</color>
+    <color name="bittersweet">#FFFB6969</color>
+    <color name="apple">#FF45C232</color>
+    <color name="mine_shaft">#FF3F3F3F</color>
+</resources>
