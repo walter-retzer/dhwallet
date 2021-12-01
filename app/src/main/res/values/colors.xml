@@ -10,4 +10,7 @@
     <color name="bittersweet">#FFFB6969</color>
     <color name="apple">#FF45C232</color>
     <color name="mine_shaft">#FF3F3F3F</color>
+    <color name="cinza">#37474f</color>
+    <color name="cinza_claro">#cfd8dc</color>
+
 </resources>

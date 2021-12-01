@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="@drawable/background_item_contato"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imagemContato"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/foto_contato" />
+
+    <TextView
+        android:id="@+id/nomeContato"
+        style="@style/Subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/descricaoContato"
+        app:layout_constraintStart_toEndOf="@+id/imagemContato"
+        app:layout_constraintTop_toTopOf="@+id/imagemContato"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Leslee Moss" />
+
+    <TextView
+        android:id="@+id/descricaoContato"
+        style="@style/Body1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemContato"
+        app:layout_constraintStart_toEndOf="@+id/imagemContato"
+        app:layout_constraintTop_toBottomOf="@+id/nomeContato"
+        tools:text="irmã" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
