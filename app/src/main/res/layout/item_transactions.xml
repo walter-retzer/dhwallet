@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="@drawable/background_item_contato"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imagemPagamento"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/ic_spotify" />
+
+    <TextView
+        android:id="@+id/nomePagamento"
+        style="@style/Subtitle"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/descricaoPagamento"
+        app:layout_constraintStart_toEndOf="@+id/imagemPagamento"
+        app:layout_constraintTop_toTopOf="@+id/imagemPagamento"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:text="Spotify" />
+
+    <TextView
+        android:id="@+id/descricaoPagamento"
+        style="@style/Body1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemPagamento"
+        app:layout_constraintStart_toEndOf="@+id/imagemPagamento"
+        app:layout_constraintTop_toBottomOf="@+id/nomePagamento"
+        tools:text="Pagamento" />
+
+    <TextView
+        android:id="@+id/valorTransaction"
+        style="@style/Headline6"
+        android:layout_width="0dp"
+        android:textColor="@color/apple"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="+ R$ 38,90" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
