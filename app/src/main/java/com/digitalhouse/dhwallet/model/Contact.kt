@@ -17,4 +17,5 @@ enum class ContactType(val description: String) {
     AMIGA("Amiga"),
     AMIGO("Amigo"),
     MAE("Mãe"),
+    PAI("Pai")
 }
