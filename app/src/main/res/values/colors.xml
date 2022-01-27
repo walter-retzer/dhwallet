@@ -10,4 +10,15 @@
     <color name="bittersweet">#FFFB6969</color>
     <color name="apple">#FF45C232</color>
     <color name="mine_shaft">#FF3F3F3F</color>
+    <color name="violet">#7472DE</color>
+
+    <color name="laranja_primaria">#bf360c</color>
+    <color name="laranja_light">#f9683a</color>
+    <color name="laranja_dark">#870000</color>
+
+
+    <color name="lime_primaria">#afb42b</color>
+    <color name="lime_light">#e4e65e</color>
+    <color name="lime_dark">#7c8500</color>
+
 </resources>

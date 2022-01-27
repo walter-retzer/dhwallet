@@ -5,15 +5,36 @@
     <string name="content_description_credit_card_flag">bandeira visa</string>
     <string name="credit_card_title_name">Nome</string>
     <string name="credit_card_title_expire">VALIDADE</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_detail">DetailActivity</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_transfer">Transferir</string>
+    <string name="search_hint">Busque por uma pessoa</string>
+    <string name="contatos">Contatos</string>
+    <string name="transacao">Transações</string>
+    <string name="transferir">Transferir</string>
+    <string name="hoje">Hoje</string>
+    <string name="data2">Qua., 10 de nov.</string>
+    <string name="home_header_transaction">Transações</string>
+    <string name="serv">Serviços</string>
+    <string name="pagamento">Pagamento</string>
+    <string name="oferta">Ofertas</string>
+    <string name="descontos">Descontos</string>
+    <string name="home_card_info_transaction">home_card_info</string>
+    <string name="ler_c_digo">Ler Código</string>
+    <string name="share_contact">
+        Olá esses são seus dados:\nTransação: %1$s\nDo tipo: %2$s\nNo valor de: %3$s
+    </string>
+    <string name="share_payments">
+        Olá seu pagamento:\nNome do Estabelecimento: %1$s\nEndereço: %2$s
+    </string>
+    <string name="luz">Luz</string>
+    <string name="agua">Agua</string>
+    <string name="internet">Internet</string>
+    <string name="usados">Mais Usados</string>
 </resources>
