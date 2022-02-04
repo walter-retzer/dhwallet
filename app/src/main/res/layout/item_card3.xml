@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_card_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_card3"
+    android:minHeight="250dp"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/item_card_limit_label"
+        style="@style/Subtitle.Inverted.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_card_limit"
+        style="@style/Title.Inverted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@id/item_card_limit_label"
+        app:layout_constraintTop_toBottomOf="@+id/item_card_limit_label"
+        tools:text="R$18,25" />
+
+    <ImageView
+        android:id="@+id/item_card_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Visa"
+        android:src="@drawable/ic_visa"
+        app:layout_constraintBottom_toBottomOf="@+id/item_card_limit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_card_limit_label" />
+
+    <TextView
+        android:id="@+id/item_card_number1"
+        style="@style/Body2.Inverted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="****"
+        app:layout_constraintBottom_toTopOf="@+id/item_card_name_label"
+        app:layout_constraintEnd_toStartOf="@+id/item_card_number2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/item_card_limit"
+        app:layout_constraintTop_toBottomOf="@+id/item_card_limit" />
+
+    <TextView
+        android:id="@+id/item_card_number2"
+        style="@style/Body2.Inverted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="****"
+        app:layout_constraintBottom_toBottomOf="@+id/item_card_number1"
+        app:layout_constraintEnd_toStartOf="@+id/item_card_number3"
+        app:layout_constraintStart_toEndOf="@+id/item_card_number1"
+        app:layout_constraintTop_toTopOf="@+id/item_card_number1" />
+
+    <TextView
+        android:id="@+id/item_card_number3"
+        style="@style/Body2.Inverted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="****"
+        app:layout_constraintBottom_toBottomOf="@+id/item_card_number1"
+        app:layout_constraintEnd_toStartOf="@+id/item_card_number4"
+        app:layout_constraintStart_toEndOf="@+id/item_card_number2"
+        app:layout_constraintTop_toTopOf="@+id/item_card_number1" />
+
+    <TextView
+        android:id="@+id/item_card_number4"
+        style="@style/Body2.Inverted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1289"
+        app:layout_constraintBottom_toBottomOf="@+id/item_card_number1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_card_number3"
+        app:layout_constraintTop_toTopOf="@+id/item_card_number2" />
+
+    <TextView
+        android:id="@+id/item_card_name_label"
+        style="@style/Subtitle.Inverted.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        app:layout_constraintBottom_toTopOf="@+id/item_card_name"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/item_card_name"
+        style="@style/Body1.Inverted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATIQUIR RAHAMAN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/item_card_data_exp_label"
+        style="@style/Subtitle.Inverted.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VALIDADE"
+        app:layout_constraintBottom_toTopOf="@+id/item_card_data_exp"
+        app:layout_constraintStart_toStartOf="@+id/item_card_data_exp"
+        app:layout_constraintEnd_toEndOf="@+id/item_card_data_exp"/>
+
+    <TextView
+        android:id="@+id/item_card_data_exp"
+        style="@style/Body1.Inverted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="06/24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

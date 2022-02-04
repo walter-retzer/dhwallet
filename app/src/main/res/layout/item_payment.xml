@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="@drawable/background_item_contato"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imagemPayment"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/icon_earth" />
+
+    <TextView
+        android:id="@+id/nomePayment"
+        style="@style/Subtitle"
+        android:layout_width="0dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/endereçoPayment"
+        app:layout_constraintStart_toEndOf="@+id/imagemPayment"
+        app:layout_constraintTop_toTopOf="@+id/imagemPayment"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Creative Electric Service" />
+
+    <TextView
+        android:id="@+id/endereçoPayment"
+        style="@style/Body1"
+        android:layout_marginEnd="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemPayment"
+        app:layout_constraintStart_toEndOf="@+id/imagemPayment"
+        app:layout_constraintTop_toBottomOf="@+id/imagemPayment"
+        tools:text="14460, Beirer Curve, Venamouth, VT 09239-2090" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

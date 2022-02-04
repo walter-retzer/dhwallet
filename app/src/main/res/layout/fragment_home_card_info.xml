@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".HomeCardInfo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".HomeCardInfo">
+
+        <View
+            android:id="@+id/backgroun_header"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/background_card_top"
+            app:layout_constraintBottom_toBottomOf="@+id/guide_header"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="NotSibling"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_arrow_backward"
+            app:titleTextColor="@color/white">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/foto"
+                tools:ignore="ContentDescription" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_header"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="487dp" />
+
+        <TextView
+            android:id="@+id/limiteEntrada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="128dp"
+            android:text="R$ 32,44"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="@+id/guide_header"
+            app:layout_constraintStart_toStartOf="@+id/guide_start" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Limite"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toTopOf="@+id/limiteEntrada"
+            app:layout_constraintStart_toStartOf="@+id/guide_start" />
+
+        <TextView
+            android:id="@+id/numero1"
+            style="@style/Body1.Inverted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="68dp"
+            android:text="****"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="@+id/guide_header"
+            app:layout_constraintStart_toStartOf="@+id/guide_start" />
+
+        <TextView
+            android:id="@+id/numero2"
+            style="@style/Body2.Inverted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="****"
+            app:layout_constraintBottom_toBottomOf="@+id/numero1"
+            app:layout_constraintEnd_toStartOf="@+id/numero3"
+            app:layout_constraintStart_toEndOf="@+id/numero1"
+            app:layout_constraintTop_toTopOf="@+id/numero1" />
+
+        <TextView
+            android:id="@+id/numero3"
+            style="@style/Body2.Inverted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="****"
+            app:layout_constraintBottom_toBottomOf="@+id/numero1"
+            app:layout_constraintEnd_toStartOf="@+id/numero4"
+            app:layout_constraintStart_toEndOf="@+id/numero2"
+            app:layout_constraintTop_toTopOf="@+id/numero1" />
+
+        <TextView
+            android:id="@+id/numero4"
+            style="@style/Body2.Inverted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1289"
+            app:layout_constraintBottom_toBottomOf="@+id/numero1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/numero3"
+            app:layout_constraintTop_toTopOf="@+id/numero2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_start_entrada"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="74dp" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_start"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_end"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_end2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="115dp" />
+
+        <TextView
+            android:id="@+id/serviços"
+            style="@style/Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:text="@string/serv"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guide_start"
+            app:layout_constraintTop_toBottomOf="@+id/guide_header" />
+
+        <ImageView
+            android:id="@+id/icon_transferir"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="33dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_seta_transferir"
+            app:layout_constraintStart_toStartOf="@+id/guide_start"
+            app:layout_constraintTop_toBottomOf="@+id/serviços"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/serviços_transferir"
+            style="@style/Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="@string/transferir"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/icon_transferir"
+            app:layout_constraintStart_toStartOf="@+id/icon_transferir"
+            app:layout_constraintTop_toBottomOf="@+id/icon_transferir" />
+
+
+        <ImageView
+            android:id="@+id/icon_transactions"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="33dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_transaction"
+            app:layout_constraintStart_toEndOf="@+id/icon_transferir"
+            app:layout_constraintTop_toBottomOf="@+id/serviços"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/serviços_transactionsr"
+            style="@style/Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="@string/transacao"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/icon_transactions"
+            app:layout_constraintStart_toStartOf="@+id/icon_transactions"
+            app:layout_constraintTop_toBottomOf="@+id/icon_transactions" />
+
+        <ImageView
+            android:id="@+id/icon_pagamento"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="33dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_pagamento"
+            app:layout_constraintStart_toEndOf="@+id/icon_transactions"
+            app:layout_constraintTop_toBottomOf="@+id/serviços"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/serviços_pagamento"
+            style="@style/Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="@string/pagamento"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/icon_pagamento"
+            app:layout_constraintStart_toStartOf="@+id/icon_pagamento"
+            app:layout_constraintTop_toBottomOf="@+id/icon_pagamento" />
+
+        <TextView
+            android:id="@+id/ofertas"
+            style="@style/Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:text="@string/oferta"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/guide_start"
+            app:layout_constraintTop_toBottomOf="@+id/icon_pagamento" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            style="@style/Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_forward"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ofertas"
+            app:layout_constraintEnd_toEndOf="@+id/guide_end"
+            app:layout_constraintTop_toTopOf="@+id/ofertas" />
+
+        <TextView
+            android:id="@+id/descontos"
+            style="@style/Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/descontos"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/guide_start"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_ofertas" />
+
+        <ImageView
+            android:id="@+id/arrow2"
+            style="@style/Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_forward"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/descontos"
+            app:layout_constraintEnd_toEndOf="@+id/guide_end"
+            app:layout_constraintTop_toTopOf="@+id/descontos" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_ofertas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/descontos"
+            app:layout_constraintEnd_toEndOf="@id/guide_end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ofertas"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_ofertas_card_info" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_descontos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintStart_toStartOf="@+id/descontos"
+            app:layout_constraintTop_toBottomOf="@+id/descontos"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_descontos_card_info" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

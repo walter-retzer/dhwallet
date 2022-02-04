@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.digitalhouse.dhwallet.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_homeCardInfo"
+            app:destination="@id/homeCardInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="com.digitalhouse.dhwallet.TransactionFragment"
+        android:label="TransactionFragment"
+        tools:layout="@layout/fragment_transaction">
+        <argument android:name="arg_entrada" />
+        <argument android:name="arg_saida" />
+        <action
+            android:id="@+id/action_transactionFragment_to_transferFragment"
+            app:destination="@id/transferFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transferFragment"
+        android:name="com.digitalhouse.dhwallet.TransferFragment"
+        android:label="fragment_transaction"
+        tools:layout="@layout/fragment_transaction">
+        <action
+            android:id="@+id/action_transferFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeCardInfo"
+        android:name="com.digitalhouse.dhwallet.HomeCardInfo"
+        android:label="fragment_home_card_info"
+        tools:layout="@layout/fragment_home_card_info">
+        <argument
+            android:name="arg_card"
+            app:argType="com.digitalhouse.dhwallet.model.Card"></argument>
+        <action
+            android:id="@+id/action_homeCardInfo_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_homeCardInfo_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+        <action
+            android:id="@+id/action_homeCardInfo_to_transferFragment"
+            app:destination="@id/transferFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.digitalhouse.dhwallet.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" />
+</navigation>
